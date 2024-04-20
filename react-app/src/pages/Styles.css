@@ -5,8 +5,25 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(208, 208, 208);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
 h2 {
   margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 h3 {
@@ -15,7 +32,9 @@ h3 {
 
 body {
   font-size: 125%;
-  font-family: "Prata", serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   color: whitesmoke;
   
@@ -74,11 +93,11 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    width: 700px;
+    width: 500px;
     padding: 10px 10px;
     z-index: 1000;
 
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba( 30, 40, 135, 0.4 );
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 15px;
@@ -88,6 +107,7 @@ body {
   .navbar ul {
     list-style-type: none;
     text-align: center;
+    justify-content: space-between;
   }
   
   .navbar ul li {
@@ -185,7 +205,6 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 75px;
   width: 60%;
 }
 
@@ -217,8 +236,12 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   margin: 1em 0;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.Spacer {
+  height: 30px;
 }

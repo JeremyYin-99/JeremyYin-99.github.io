@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
         </div>
       </div>
       <div className="page-content">
-        <h1>About</h1>
+        <h1>About Me</h1>
         <p className="About-Me-Content">
           <strong>
             I am a researcher with an interest in machine learning amd anomaly
@@ -63,38 +63,35 @@ const HomePage: React.FC = () => {
           </strong>
         </p>
         <p className="About-Me-Content">
-          After graduating with a Bachelor's and Master's of Science in Civil
-          Environmental Engineering under my belt, I've spent years delving into
-          the intricacies of infrastructure design, construction, and
-          management. My academic journey has instilled in me a deep
-          appreciation for the intersection of theory and practice, which fuels
-          my enthusiasm for tackling real-world challenges.
+          Having earned both a Bachelor's and Master's of Science in Civil
+          Environmental Engineering, I've dedicated years to exploring the
+          intricacies of infrastructure design, construction, and management. My
+          academic journey has left me with a profound appreciation for the
+          convergence of theoretical knowledge and practical application,
+          driving my passion for addressing real-world challenges.
         </p>
         <p className="About-Me-Content">
-          Beyond the realms of traditional engineering, I harbor a fervent
-          passion for machine learning and data science. My fascination with
-          these fields stems from their potential to revolutionize how we
-          approach problem-solving and decision-making in the built environment.
+          Beyond the traditional realms of engineering, I am deeply fascinated
+          by the potential of machine learning and data science to transform
+          problem-solving and decision-making processes within the built
+          environment. I find great satisfaction in the engineering, creativity,
+          and design processes, whether they involve the physical construction
+          and modeling or the development of algorithmic models.
         </p>
         <p className="About-Me-Content">
-          I thrive on the thrill of building things—whether it's physical
-          structures or algorithmic models. From conceptualization to execution,
-          I relish the opportunity to bring ideas to life and witness their
-          tangible impact on the world around us.
+          Academic research has played a pivotal role in my professional
+          development, offering invaluable insights and fostering growth.
+          Through rigorous experimentation, analysis, and interactions with my
+          peers, I have made contributions to advancing knowledge in areas
+          ranging from fault detection in structural systems to the application
+          of optimization and simulation techniques.
         </p>
         <p className="About-Me-Content">
-          Academic research has been a cornerstone of my journey, providing me
-          with invaluable insights and opportunities for growth. Through
-          rigorous experimentation and analysis, I've contributed to advancing
-          knowledge in areas ranging from fault detection in structural systems
-          to optimization and simulation techniques.
-        </p>
-        <p className="About-Me-Content">
-          I'm always eager to connect with like-minded individuals and
-          collaborators! Whether you're interested in discussing the latest
-          advancements in AI-driven infrastructure or simply want to swap ideas
-          over a virtual cup of coffee, I'd love to hear from you. Feel free to
-          reach out via the email or text down below!
+          I am always eager to engage with individuals who share similar
+          interests and aspirations. I always welcome the opportunity to connect
+          and discuss the latest advancements in AI-driven applications and
+          theory. Please feel free to reach out via the email or text message
+          provided below—I look forward to further dialogue and evolution.
         </p>
       </div>
     </>

@@ -63,13 +63,20 @@ const RandPPage: React.FC = () => {
           </p>
         </div>
       </div>
+      <div className="Spacer"></div>
       <h2>Publications</h2>
       <ul className="Publications">
         <li>
-          <h3>
-            Anomaly identification algorithms for indirect structural health
-            monitoring using a laboratory-scale railroad track system.
-          </h3>
+          <a
+            href="https://doi.org/10.1117/12.2658463"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>
+              Anomaly identification algorithms for indirect structural health
+              monitoring using a laboratory-scale railroad track system.
+            </h3>
+          </a>
         </li>
         <li>
           <strong>Abstract: </strong>Presently, railroad monitoring strategies
@@ -109,11 +116,17 @@ const RandPPage: React.FC = () => {
         </li>
         <hr />
         <li>
-          <h3>
-            Open-source hardware and software for a laboratory-scale track and
-            moving vehicle actuation system used for indirect broken rail
-            detection.
-          </h3>
+          <a
+            href="https://doi.org/10.1117/12.2658438"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>
+              Open-source hardware and software for a laboratory-scale track and
+              moving vehicle actuation system used for indirect broken rail
+              detection.
+            </h3>
+          </a>
         </li>
         <li>
           <strong>Abstract: </strong>There is an urgent need to better

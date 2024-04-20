@@ -12,9 +12,7 @@ const Navbar: React.FC = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/ResearchAndPublications">
-              Research and Publications
-            </NavLink>
+            <NavLink to="/ResearchAndPublications">Experiences</NavLink>
           </li>
           <li>
             <a href={resume} target="_blank" rel="noopener noreferrer">
