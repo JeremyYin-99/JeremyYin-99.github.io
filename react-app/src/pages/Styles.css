@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 20px;
+} 
+
 a {
   text-decoration: none;
   color: white;
@@ -18,15 +22,34 @@ h1 {
   margin-bottom: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  font-size: 2em;
 }
 
 h2 {
   margin-bottom: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  font-size: 1.5em;
 }
 
 h3 {
+  margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
   margin-bottom: 10px;
 }
 
@@ -45,25 +68,54 @@ body {
   background-color: black;
 }
 
-/* Home page */
-.home-content {
-  font-size: 2rem;
-  width: 40%;
+ul {
+  list-style-type: none;
 }
 
-.home-page {
-  opacity: 0;
-  transition: opacity 3s ease;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+.page-content {
+  animation: fadeIn 1.5s;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  width: 950px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Home page */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
+}
+
+.home-content-left {
+  width: 40%;
+  min-width: 300px;
 }
 
 .home-content-right {
-  width: 50%;
+  width: 40%;
+  min-width: 300px;
 }
   
 .home-page.fade-in {
@@ -92,12 +144,12 @@ body {
 
 .navbar {
     position: fixed;
-    top: 0;
+    top: 25px;
     width: 500px;
     padding: 10px 10px;
     z-index: 1000;
 
-    box-shadow: 0 8px 32px 0 rgba( 30, 40, 135, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 15px;
@@ -131,19 +183,9 @@ body {
   
 /* About page */
 
-.page-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 75px;
-  width: 60%;
-}
-
-.About-Me-Content {
+/* .About-Me-Content {
   padding-top: 25px;
-}
+} */
 
 /* Research and Publication page */
 .CardHolder {
@@ -156,17 +198,19 @@ body {
 .Card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 10px;
   padding: 10px;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 450px;
   color: white;
   
   backdrop-filter: blur( 8px );
   -webkit-backdrop-filter: blur( 8px );
   border-radius: 10px;
   background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 30, 40, 135, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
 .Card:hover {
@@ -177,13 +221,11 @@ body {
 }
 
 .CardTitle {
-  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 }
 
 .CardText {
-  font-size: 0.8rem;
   height: 100%;
   padding: 10px;
 }
@@ -213,7 +255,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  /* height: 50px; */
   width: 100%;
   bottom: 0;
 }
@@ -232,16 +274,129 @@ body {
   margin-right: 20px;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  margin: 1em 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.Contact-List {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .Spacer {
   height: 30px;
 }
+
+/* Education */
+
+.Education-Banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 250px;
+  bottom: 0;
+}
+
+.School-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  width: 4750px;
+  height: 150px;
+  
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius: 10px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.School-Card:hover {
+  transition: ease-in-out 0.3s;
+  height: 250px;
+}
+
+.School-Card:not(:hover) {
+  transition: ease-in-out 0.3s;
+  height: 150px;
+}
+
+.School-Logo-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(245, 245, 245, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.School-logo {
+  max-height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.School-Info {
+  position : relative;
+  padding : 10px 15px;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.School-Card:hover .School-Info {
+  visibility : visible;
+  opacity : 1;
+  transition : 0.3s ease-in-out;
+}
+
+.School-Card:not(:hover) .School-Info {
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.1s ease-in-out;
+}
+
+/* Skills */
+
+.Skills-Banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.Skills-Card {
+  /* width: 200px; */
+  padding: 10px 25px;
+}
+
+.Skills-Card ul li {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+/* Teaching */
+
+.no-bottom-margin {
+  margin: 0;
+}
+
+/* Icons */
+
+.material-symbols-outlined {
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
