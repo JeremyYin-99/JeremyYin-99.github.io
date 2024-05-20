@@ -22,7 +22,9 @@ const RandPPage: React.FC = () => {
           </p>
         </div>
         <div className="Card">
-          <h3 className="CardTitle">Laboratory Scale Broken Rail Detection</h3>
+          <h3 className="CardTitle">
+            Laboratory Scale Simulation Model for Broken Rail Analysis
+          </h3>
           <p className="CardText">
             In recent research, focus has shifted towards detecting
             infrastructure damage using onboard acceleration signals, aiming for
@@ -37,7 +39,8 @@ const RandPPage: React.FC = () => {
         </div>
         <div className="Card">
           <h3 className="CardTitle">
-            Aggregate Spoiling and Material Analysis
+            Analysis of Railway Tie Padding on Load Dampening and Aggregate
+            Spoiling
           </h3>
           <p className="CardText">
             This study investigates the adverse effects of locomotive-induced
@@ -51,7 +54,9 @@ const RandPPage: React.FC = () => {
           </p>
         </div>
         <div className="Card">
-          <h3 className="CardTitle">Earthwork Optimization</h3>
+          <h3 className="CardTitle">
+            Earthwork Operation Optimization using Minimum Spanning Tree
+          </h3>
           <p className="CardText">
             This study addresses soil movement optimization in space-constrained
             environments like Singapore through earthwork optimization
@@ -68,7 +73,7 @@ const RandPPage: React.FC = () => {
       </div>
       <div className="Spacer"></div>
       <h2>Publications</h2>
-      <ul className="Publications">
+      <ul>
         <li>
           <a
             href="https://doi.org/10.1117/12.2658463"

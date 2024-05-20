@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
     <div className="page-content">
       <div className="home-page">
         {/* // className={`home-page ${isVisible ? "fade-in" : ""}`}> */}
-        <div className="home-content-left">
+        <div className="home-content">
           <h2 className="no-bottom-margin">Hey! My name is</h2>
           <h1 className="no-bottom-margin">
             <strong>Jeremy</strong>
@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
             <strong>{texts[currentTextIndex]}</strong>
           </h1>
         </div>
-        <div className="home-content-right">
+        <div className="home-content">
           <img
             className="rotating-photo"
             src={images[currentTextIndex]}
