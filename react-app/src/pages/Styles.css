@@ -88,6 +88,11 @@ hr {
   margin: 1em 0;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .Spacer {
   height: 30px;
 }
@@ -261,6 +266,11 @@ hr {
   display: flex;
   grid-column: 1;
   grid-row: 1;
+}
+
+.School-Logo-Container img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .School-Card:hover .School-Info {
