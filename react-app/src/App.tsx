@@ -4,6 +4,7 @@ import HomePage from "./pages/Home";
 import RandPPage from "./pages/ResearchAndPublications";
 import TeachingPage from "./pages/Teaching";
 import ContactPage from "./pages/Contact";
+import ProjectPage from "./pages/Projects";
 import { useLayoutEffect } from "react";
 
 const Wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/ResearchAndPublications" element={<RandPPage />} />
+            <Route path="/Projects" element={<ProjectPage />} />
             <Route path="/Teaching" element={<TeachingPage />} />
           </Routes>
           <ContactPage />

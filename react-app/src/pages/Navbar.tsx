@@ -15,11 +15,14 @@ const Navbar: React.FC = () => {
             <NavLink to="/ResearchAndPublications">Research</NavLink>
           </li>
           <li>
+            <NavLink to="/Projects">Projects</NavLink>
+          </li>
+          <li>
             <NavLink to="/Teaching">Teaching</NavLink>
           </li>
           <li>
             <a href={resume} target="_blank" rel="noopener noreferrer">
-              Resume
+              CV
             </a>
           </li>
         </ul>
