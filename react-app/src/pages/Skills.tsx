@@ -6,7 +6,7 @@ const SkillsSection: React.FC = () => {
     <>
       <h2 className="Skills-Title">Skills</h2>
       <div className="Skills-Banner">
-        <div className="Skills-Card">
+        <div className="Skills-Card left-border">
           <h3>Engineering</h3>
           <ul>
             <li>Autodesk Inventor</li>
@@ -16,7 +16,8 @@ const SkillsSection: React.FC = () => {
             <li>SAP 2000</li>
           </ul>
         </div>
-        <div className="Skills-Card">
+        <div className="Spacer"></div>
+        <div className="Skills-Card left-border">
           <h3>Data Analytics</h3>
           <ul>
             <li>Python</li>
@@ -28,7 +29,8 @@ const SkillsSection: React.FC = () => {
             <li>SQL</li>
           </ul>
         </div>
-        <div className="Skills-Card">
+        <div className="Spacer"></div>
+        <div className="Skills-Card left-border">
           <h3>Machine Learning</h3>
           <ul>
             <li>Python</li>
@@ -38,7 +40,8 @@ const SkillsSection: React.FC = () => {
             <li>OpenCV</li>
           </ul>
         </div>
-        <div className="Skills-Card">
+        <div className="Spacer"></div>
+        <div className="Skills-Card left-border">
           <h3>Design</h3>
           <ul>
             <li>LaTeX</li>
@@ -50,11 +53,13 @@ const SkillsSection: React.FC = () => {
             <li>Blender</li>
           </ul>
         </div>
-        <div className="Skills-Card">
+        <div className="Spacer"></div>
+        <div className="Skills-Card left-border">
           <h3>Other</h3>
           <ul>
             <li>Microsoft Office Suite</li>
             <li>Google Suite</li>
+            <li>Overleaf</li>
             <li>Chinese Mandarin</li>
             <li>Metal and Wood Shop Training</li>
           </ul>

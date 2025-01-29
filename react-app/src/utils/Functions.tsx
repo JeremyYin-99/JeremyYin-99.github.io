@@ -2,36 +2,44 @@ export function CardBanner(
   cardTitle?: string,
   cardObjective?: string,
   cardContribtion?: string,
-  cardLink?: string | boolean
+  cardLink?: string | boolean,
+  cardSkills?: string
 ) {
   return (
-    <div className="Card">
+    <div className="Card left-border">
       <h3 className="CardTitle">{cardTitle}</h3>
-      <p className="CardText">
-        <strong>Objective: </strong>
-        {cardObjective}
-      </p>
-      <p className="CardText">
-        <strong>Contribution: </strong>
-        {cardContribtion}
-      </p>
-      {(() => {
-        if (cardLink == false) {
-          return <></>;
-        } else {
-          return (
-            <a
-              href={cardLink as string}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4>
-                <em>See more</em>
-              </h4>
-            </a>
-          );
-        }
-      })()}
+      <div className="CardScroll">
+        <p className="CardText">
+          <strong>Objective: </strong>
+          {cardObjective}
+        </p>
+        <p className="CardText">
+          <strong>Contribution: </strong>
+          {cardContribtion}
+        </p>
+        <p className="CardText">
+          <strong>Skills: </strong>
+          {cardSkills}
+        </p>
+        {(() => {
+          if (cardLink == false) {
+            return <></>;
+          } else {
+            return (
+              <a
+                className="CardText"
+                href={cardLink as string}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4>
+                  <em>See more</em>
+                </h4>
+              </a>
+            );
+          }
+        })()}
+      </div>
     </div>
   );
 }
@@ -46,7 +54,7 @@ export function PublicationFormat(
 ) {
   return (
     <>
-      <li>
+      <li className="left-border">
         <a href={pubLink as string} target="_blank" rel="noopener noreferrer">
           <h3>
             <strong>{pubTitle}</strong>
@@ -83,7 +91,7 @@ export function TeachingLayout(
   leadInstructor2Link?: string
 ) {
   return (
-    <li>
+    <li className="left-border">
       <h3>
         <a href={courseLink} target="_blank" rel="noopener noreferrer">
           <strong>

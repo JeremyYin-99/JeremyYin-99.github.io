@@ -7,7 +7,7 @@ function ProjectCard(
   projectLink?: string
 ) {
   return (
-    <li>
+    <li className="left-border">
       <div>
         <h3>
           <strong>{projectTitle}</strong>

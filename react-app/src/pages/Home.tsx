@@ -27,11 +27,10 @@ const HomePage: React.FC = () => {
       <div className="home-page">
         {/* // className={`home-page ${isVisible ? "fade-in" : ""}`}> */}
         <div className="home-content">
-          <h2 className="no-bottom-margin">Hey! My name is</h2>
-          <h1 className="no-bottom-margin">
-            <strong>Jeremy</strong>
-          </h1>
-          <h2 className="no-bottom-margin">and I am a</h2>
+          <h2 className="no-bottom-margin">
+            Hey! My name is <strong>Jeremy</strong>
+          </h2>
+          <h2 className="no-bottom-margin">and I am a:</h2>
           <h1 className="no-bottom-margin rotating-text">
             <strong>{texts[currentTextIndex]}</strong>
           </h1>

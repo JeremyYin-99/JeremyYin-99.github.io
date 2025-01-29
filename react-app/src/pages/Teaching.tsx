@@ -12,7 +12,7 @@ const TeachingPage: React.FC = () => {
           "CMU",
           "12-301",
           "CEE Projects: Integrating the Built, Natural and Information Environments",
-          "https://www.cmu.edu/cee/admissions/cee-courses/12-301.html",
+          "https://cee.engineering.cmu.edu/education/course-descriptions/12-301.html",
           "Professor Joe Moore",
           "https://www.cmu.edu/cee/people/faculty/moore.html",
           "Teaching Assistant",
@@ -21,24 +21,24 @@ const TeachingPage: React.FC = () => {
           "Professor Don Coffelt",
           "https://www.cmu.edu/cee/people/faculty/coffelt.html"
         )}
-        <hr />
+        <div className="Spacer"></div>
         {TeachingLayout(
           `CMU`,
           `12-770`,
           `Special Topics: Autonomous Sustainable Buildings: From Theory to Practice`,
-          `https://www.cmu.edu/cee/admissions/cee-courses/12-770.html`,
+          `https://cee.engineering.cmu.edu/education/course-descriptions/12-770.html`,
           `Professor Mario Berges`,
           `https://www.cmu.edu/cee/people/faculty/berges.html`,
           `Teaching Assistant`,
           `Spring 2023`,
           "With a focus on real-world deployments, case studies and group projects, this course will cover the theory and emerging practice of retrofitting existing buildings with hardware and software to significantly increase their autonomy and overall sustainability. The focus will be primarily on the operational stage of the life-cycle of buildings, and particularly on HVAC, electrical and water systems within them."
         )}
-        <hr />
+        <div className="Spacer"></div>
         {TeachingLayout(
           `CMU`,
           `12-760`,
           `Fundamentals of Programming for Engineering Systems`,
-          `https://www.cmu.edu/cee/admissions/cee-courses/12-760.html`,
+          `https://cee.engineering.cmu.edu/education/course-descriptions/12-760.html`,
           `Professor Susan Finger`,
           `https://www.cmu.edu/cee/people/faculty/finger.html`,
           `Teaching Assistant`,

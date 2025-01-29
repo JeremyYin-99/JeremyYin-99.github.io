@@ -35,7 +35,7 @@ const ContactPage: React.FC = () => {
         </ul>
       </div>
       <h4>
-        <em>Last updated: November 20, 2024</em>
+        <em>Last updated: January 28, 2025</em>
       </h4>
       <div className="Spacer"></div>
     </>

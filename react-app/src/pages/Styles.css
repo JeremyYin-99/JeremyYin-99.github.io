@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: top;
+  width: 100vw;
   height: 100vh;
   background-color: var(--main-bg-color);
 }
@@ -91,6 +92,12 @@ img {
   height: 30px;
 }
 
+.left-border {
+  border-left-style: solid;
+  border-left-color: var(--main-txt-color);
+  padding: 0 25px;
+}
+
 .page-content {
   animation: fadeIn 1.5s;
   display: flex;
@@ -99,7 +106,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 75px;
-  width: 1300px;
+  width: 90vw;
 }
 
 @keyframes fadeIn {
@@ -115,7 +122,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -132,6 +139,7 @@ img {
 .Nav-Container{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -140,7 +148,7 @@ img {
     position: fixed;
     top: 25px;
     width: fit-content;
-    padding: 10px 10px;
+    padding: 10px 40px;
     z-index: 1000;
 
     box-shadow: var(--box-shadow);
@@ -158,7 +166,7 @@ img {
   .navbar ul li {
     font-weight: 500;
     display: inline;
-    margin-right: 20px;
+    margin-right: 50px;
   }
 
   .navbar ul li:last-child {
@@ -172,10 +180,11 @@ img {
 /* Research and Publication page */
 .CardHolder {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
   justify-content: center;
-  align-items:start;
+  align-items: start;
 }
 
 .Card {
@@ -185,10 +194,12 @@ img {
   justify-content: start;
   margin: 10px;
   padding: 10px;
-  width: 800px;
-  min-height: 300px;
-  height: fit-content;
+  min-width: 400px;
+  max-width: 600px;
+  height: 90px;
+
   
+  transition: ease-in-out 0.5s;
   backdrop-filter: blur( 8px );
   -webkit-backdrop-filter: blur( 8px );
   border-radius: 10px;
@@ -197,10 +208,25 @@ img {
 }
 
 .Card:hover {
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 1s;
   transform: scale(1.05);
   background: rgba(150, 200, 255, 0.25);
-  
+  height: 300px;
+}
+.CardScroll {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.Card > .CardScroll .CardText {
+  visibility: hidden;
+  opacity: 0;
+  transition:opacity 1s ease-in-out;
+}
+
+.Card:hover > .CardScroll .CardText {
+  visibility: visible;
+  opacity: 1;
 }
 
 .CardTitle {
@@ -209,8 +235,9 @@ img {
 }
 
 .CardText {
-  height: 100%;
+  /* height: 100%; */
   padding: 10px;
+  visibility: hidden;
 }
 /* Contact Bar */
 .Contact-Title {
@@ -227,9 +254,11 @@ img {
 }
 
 /* Education */
+
 .Education-Banner {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -237,10 +266,10 @@ img {
 
 .School-Card {
   display: grid;
-  margin: 5px;
+  margin: 5px 20px;
   padding: 10px;
-  width: 475px;
-  height: fit-content;
+  min-width: 300px;
+  max-width: 500px;
   
   backdrop-filter: blur( 8px );
   -webkit-backdrop-filter: blur( 8px );
@@ -278,7 +307,7 @@ img {
 
 .School-Card:not(:hover) .School-Info {
   opacity: 0;
-  transition : 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .School-Card:hover .School-Logo-Container {
@@ -313,8 +342,8 @@ img {
 .Skills-Banner {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: start;
   width: 100%;
 }
@@ -323,9 +352,23 @@ img {
   padding: 10px 25px;
 }
 
+.Skills-Card ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
 .Skills-Card ul li {
   font-size: 0.9rem;
   margin-bottom: 2px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  
 }
 
 /* Teaching */
