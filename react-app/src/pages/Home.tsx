@@ -44,7 +44,9 @@ const HomePage: React.FC = () => {
         </div>
       </div>
       <AboutSection />
+      <div className="Spacer_large"></div>
       <EducationSection />
+      <div className="Spacer_large"></div>
       <SkillsSection />
     </div>
   );

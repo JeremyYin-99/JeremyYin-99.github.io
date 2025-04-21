@@ -92,6 +92,10 @@ img {
   height: 30px;
 }
 
+.Spacer_large {
+  height: 100px;
+}
+
 .left-border {
   border-left-style: solid;
   border-left-color: var(--main-txt-color);
